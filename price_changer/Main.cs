@@ -73,16 +73,16 @@ namespace price_changer
                     {
                         upgradeModel.cost = (int)(upgradeModel.cost * multi);
                     }
-                    if (inAGame)
-                    {
-                        foreach (TowerModel towerModel in InGame.Bridge.Model.towers)
-                        {
-                            towerModel.cost *= multi;
-                        }
-                        foreach (UpgradeModel upgradeModel in InGame.Bridge.Model.upgrades)
-                        {
-                            upgradeModel.cost = (int)(upgradeModel.cost * multi);
-                        }
+                  --  if (inAGame)
+                   -- {
+                      --  foreach (TowerModel towerModel in InGame.Bridge.Model.towers)
+                      --  {
+                     --       towerModel.cost *= multi;
+                    --    }
+                   --     foreach (UpgradeModel upgradeModel in InGame.Bridge.Model.upgrades)
+                    --    {
+                     --       upgradeModel.cost = (int)(upgradeModel.cost * multi);
+                  --      }
                     }
 
                 };
